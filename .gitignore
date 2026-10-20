@@ -1,0 +1,11 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Generated audio and personal voice samples
+outputs/
+voices/
+
+# Gradio temp files
+.gradio/
