@@ -1,7 +1,8 @@
 # Python 3.10-3.12. Install CPU PyTorch first:
-#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
-torch
-torchaudio
+#   pip install "torch==2.8.*" "torchaudio==2.8.*" --index-url https://download.pytorch.org/whl/cpu
+# torch 2.9+ needs torchcodec + shared FFmpeg DLLs for audio IO, which breaks on Windows.
+torch==2.8.*
+torchaudio==2.8.*
 coqui-tts
 gradio
 soundfile

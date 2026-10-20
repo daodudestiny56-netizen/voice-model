@@ -30,7 +30,7 @@ The first time you generate speech, the model downloads (about 1.8 GB, one time 
 ```
 python -m pip install uv
 python -m uv venv .venv --python 3.11
-python -m uv pip install --python .venv\Scripts\python.exe torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+python -m uv pip install --python .venv\Scripts\python.exe "torch==2.8.*" "torchaudio==2.8.*" --index-url https://download.pytorch.org/whl/cpu
 python -m uv pip install --python .venv\Scripts\python.exe coqui-tts gradio soundfile imageio-ffmpeg
 ```
 
