@@ -137,7 +137,7 @@ def generate(audio_path, saved_voice, text, language, speed, temperature,
     return str(out), f"Done in {secs:.0f} s. Saved to `{out.relative_to(ROOT)}`."
 
 
-with gr.Blocks(title="Voice Clone Studio", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="Voice Clone Studio") as demo:
     gr.Markdown(
         "# 🎙️ Voice Clone Studio\n"
         "Upload a short clip of someone speaking, type any text, and hear it in their voice. "
@@ -194,4 +194,7 @@ with gr.Blocks(title="Voice Clone Studio", theme=gr.themes.Soft()) as demo:
 
 
 if __name__ == "__main__":
-    demo.queue().launch(server_name="127.0.0.1", server_port=7860, inbrowser=True)
+    demo.queue().launch(
+        server_name="127.0.0.1", server_port=7860, inbrowser=True,
+        theme=gr.themes.Soft(),
+    )
