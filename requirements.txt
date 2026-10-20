@@ -1,0 +1,8 @@
+# Python 3.10-3.12. Install CPU PyTorch first:
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+torch
+torchaudio
+coqui-tts
+gradio
+soundfile
+imageio-ffmpeg
